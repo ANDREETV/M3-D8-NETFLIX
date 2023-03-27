@@ -50,8 +50,23 @@
                             <a class="nav-link disabled">My List</a>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center gap-3 col-md-2 jus justify-content-lg-end">
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <div id="barra-ricerca" class="d flex barra-ricerca z-3 anima-ricerca">
+                        <div class="d-flex justify-content-end mb-4">
+                            <div onclick="ricerca()" class="close"></div>
+                        </div>
+                        <label for="exampleDataList" class="form-label d-flex justify-content-center">
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Cerca">
+                        </label>
+                        <datalist id="datalistOptions">
+                            <option value="The Glory">
+                            <option value="iZombie">
+                            <option value="Shooter">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 col-md-2 jus justify-content-lg-end ">
+                        <i onclick="ricerca()" class="fa-solid fa-magnifying-glass text-white "></i>
                         <a href="">KIDS</a>
                         <a href=""><i class="fa-solid fa-bell"></i></a>
                     </div>

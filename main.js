@@ -1,4 +1,4 @@
-function animazione(params) {
+function animazione() {
     let animazioneSezione1 = document.getElementById('animazione-sezione-1')
 
     animazioneSezione1.classList.add('sezione-1')
@@ -13,11 +13,20 @@ function animazione(params) {
     animazioneSezione2.classList.add('sezione')
 }
 
+function ricerca() {
+    let btnRicerca = document.querySelectorAll('#barra-ricerca')
+    for (let i = 0; i < btnRicerca.length; i++) {
+        btnRicerca[i].classList.toggle('ricerca-block')
+        
+    }
+}
 
 
 
 
-
+// document.addEventListener('DOMContentLoaded', () => {  // => Arrow function expressions
+//     animazione()
+// })
 window.onload = function(){
     animazione()
 }
