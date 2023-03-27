@@ -13,6 +13,11 @@ function animazione(params) {
     animazioneSezione2.classList.add('sezione')
 }
 
+
+
+
+
+
 window.onload = function(){
     animazione()
 }
